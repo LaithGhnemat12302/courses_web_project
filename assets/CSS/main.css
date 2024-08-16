@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap');
 
 * {
   margin: 0;
@@ -9,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 8000px;
+  background-color: #f4f4f4;
 }
 
 .container {
@@ -228,6 +230,97 @@ header .container .authentication .register {
 /* ############################################################### */
 /* ############################################################### */
 
+.testimonials_section{
+    margin-top: 50px;
+}
+
+.testimonials_section h2{
+    font-family: "Mada", sans-serif;
+    font-size: 40px;
+    color: #0D1222;
+    text-align: center;
+}
+
+.testimonials_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.testimonials_section .testimonials{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.testimonials .testimonial{
+    width: calc((100% - 30px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.testimonial::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 100px solid #393e46;
+    border-left: 100px solid transparent;
+}
+
+.testimonial .user_info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.user_info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user_info .user_data{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.user_info .user_data h4{
+    font-size: 20px;
+}
+
+.user_info .user_data span{
+    color: #969696;
+    font-size: 14px;
+}
+
+.testimonial .stars{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.testimonial .stars svg{
+    width: 30px;
+    height: 30px;
+    fill: rgb(255, 170, 51);
+}
+
+.testimonial blockquote{
+    color: #646464;
+}
+
+/* ############################################################### */
+/* ############################################################### */
 footer {
   background-color: #393e46;
   color: #ffffff;

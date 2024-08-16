@@ -9,7 +9,6 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 8000px;
-  background-color: white;
 }
 
 .container {
@@ -28,11 +27,12 @@ ul {
 /* ############################################################### */
 
 header .container {
+  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 header .container .logo {
@@ -90,6 +90,141 @@ header .container .authentication .register {
   color: white;
   background-color: #545be8;
 }
+/* ############################################################### */
+/* ############################################################### */
+
+.courses_section{
+    margin-top: 50px;
+}
+
+.courses_section .container{
+    display: flex;
+    gap: 30px;
+}
+
+.courses_section .courses{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.courses .course{
+    background-color: #FFFFFF;
+    width: calc((100% - 30px) / 2);
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.course .card{
+    width: 100%;
+    position: relative;
+}
+
+.course .card img{
+    width: 100%;
+    aspect-ratio: 1.5/1;
+    filter: brightness(0.7);
+    object-fit: cover;
+}
+
+.course .card .info{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0; 
+}
+
+.course .card .info span:first-child{
+    padding: 5px 10px;
+    background-color: #545be8;
+    font-size: 20px;
+    font-weight: 600;
+    align-self: flex-start;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.course .card .info span:last-child{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+.course .details{
+    padding: 15px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course .details .row{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.course .details .row:first-child{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.course .details .row:last-child{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.container .details h3{
+    font-size: 24px;
+    color: #141E32;
+}
+
+.container .details .views{
+    color: #545BE8;
+}
+
+.container .details span{
+    color: #969696;
+}
+
+.courses_section .description{
+    width: 35%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.courses_section .description span{
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #545BE8;
+}
+
+.courses_section .description h2{
+    font-size: 40px;
+    color: #141E32;
+}
+
+.courses_section .description p{
+    color: #969696;
+}
+
+.courses_section .description a{
+    font-family: "Inter", sans-serif;
+    background-color: #545BE8;
+    color: #FFFFFF;
+    width: fit-content;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
 /* ############################################################### */
 /* ############################################################### */
 
@@ -179,5 +314,3 @@ footer ul {
 footer li {
   font-size: 14px;
 }
-/* ############################################################### */
-/* ############################################################### */

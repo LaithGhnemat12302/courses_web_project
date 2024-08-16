@@ -95,6 +95,82 @@ header .container .authentication .register {
 /* ############################################################### */
 /* ############################################################### */
 
+.background_section{
+    margin-top: 50px;
+}
+
+.background_section .container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.background_section .container .start{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.background_section .start span{
+    font-family: "Inter", sans-serif;
+    color: #545BE8;
+}
+
+.background_section .start h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    color: #141E32;
+}
+
+.background_section p{
+    color: #969696;
+}
+
+.background_section .text{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.background_section .text a{
+    font-family: "Inter", sans-serif;
+    background-color: #545BE8;
+    color: #FFFFFF;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.background_section .text .video{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.background_section .video svg{
+    width: 40px;
+    height: 40px;
+}
+
+.background_section .video span{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #141E32;
+}
+
+.background_section .container img{
+    width: 35%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* ############################################################### */
+/* ############################################################### */
+
 .courses_section{
     margin-top: 50px;
 }

@@ -9,7 +9,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 8000px;
   background-color: #f4f4f4;
 }
 
@@ -27,6 +26,13 @@ ul {
 }
 /* ############################################################### */
 /* ############################################################### */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
 
 header .container {
   background-color: #FFFFFF;
@@ -96,7 +102,7 @@ header .container .authentication .register {
 /* ############################################################### */
 
 .background_section{
-    margin-top: 50px;
+    margin-top: 130px;
 }
 
 .background_section .container{
@@ -180,6 +186,7 @@ header .container .authentication .register {
     justify-content: space-between;
     background-color: white;
     padding: 50px;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 .given_Courses .container .start{
@@ -242,7 +249,79 @@ header .container .authentication .register {
     font-size: 15px;
     color: #DDDDDD;
 }
+/* ############################################################### */
+/* ############################################################### */
 
+.taken_courses{
+    margin-top: 50px;
+}
+
+.taken_courses .container{
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 100px;
+    background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
+}
+
+.taken_courses .container img{
+    padding: 30px;
+    width: calc((100% - 100px) / 2);
+    aspect-ratio: 1/1;
+    filter: brightness(0.9), blur(5);
+    display: block;
+}
+
+.taken_courses .container .end{
+    width: calc((100% - 100px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.taken_courses .end span{
+    font-family: "Inter", sans-serif;
+    color: #F0C932;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.taken_courses .end h2{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.taken_courses .end p{
+    color: #DDDDDD;
+    font-size: 18px;
+}
+
+.taken_courses .end .details{
+    display: flex;
+    gap: 100px;
+}
+
+.taken_courses .details .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.taken_courses .data .number{
+    font-family: "Inter", sans-serif;
+    color: #F0C932;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.taken_courses .data .text{
+    font-family: "Inter", sans-serif;
+    color: #DDDDDD;
+}
 /* ############################################################### */
 /* ############################################################### */
 .courses_section{
@@ -450,7 +529,7 @@ header .container .authentication .register {
 
 .user_info .user_data span{
     color: #969696;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .testimonial .stars{
